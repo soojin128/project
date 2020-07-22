@@ -1,0 +1,90 @@
+@import url('common.css');
+
+
+
+header {}
+
+
+.h-1 {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+}
+
+.h-1 h1 {
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+}
+
+
+
+
+
+.h-1 .sign {
+    background: #434343;
+    padding: 1px 0 4px 5px;
+    border-radius: 5px;
+}
+
+.h-1 .sign a {
+    color: #fff;
+    display: inline-block;
+    font-size: .8em;
+}
+
+.h-1 .sign a p {
+    background: url(../img/search-icon%202.png) no-repeat right 2px;
+    width: 50px;
+    display: inline-block;
+}
+
+.h-1 .sign a img {
+    vertical-align: bottom;
+}
+
+.h-1 .sign a:after {
+    content: '|';
+    padding: 0 5px;
+}
+
+.h-1 .sign a:last-child:after {
+    content: '';
+}
+
+
+
+
+.accessory{
+    background: #1b1b1b;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding-left: 200px;
+}
+.accessory div{
+    display: block;
+}
+.accessory div ul li{
+    display: inline-block;
+}
+
+.accessory div ul li a{
+    color: #fff;
+    display: inline-block;
+    padding-right: 30px;
+}
+.accessory div ul li:last-child a{
+    padding-right: 0;
+}
+.accessory div ul li a img{}
+.accessory div ul li a p{}
+
+
+

@@ -1,0 +1,385 @@
+@import url('common.css');
+
+
+
+header {}
+
+
+.h-1 {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+}
+
+.h-1 h1 {
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+}
+
+
+
+
+
+.h-1 .sign {
+    background: #434343;
+    padding: 1px 0 4px 5px;
+    border-radius: 5px;
+}
+
+.h-1 .sign a {
+    color: #fff;
+    display: inline-block;
+    font-size: .8em;
+}
+
+.h-1 .sign a p {
+    background: url(../img/search-icon%202.png) no-repeat right 2px;
+    width: 50px;
+    display: inline-block;
+}
+
+.h-1 .sign a img {
+    vertical-align: bottom;
+}
+
+.h-1 .sign a:after {
+    content: '|';
+    padding: 0 5px;
+}
+
+.h-1 .sign a:last-child:after {
+    content: '';
+}
+
+
+
+
+.h-1 nav {}
+
+
+
+.h-1 nav article {
+    text-align: center;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.h-1 nav article a {
+    color: #bdbdbd;
+}
+
+.h-1 nav article:hover a {
+    color: #fff;
+}
+
+.h-1 article ul:before {
+    content: '';
+    border: 15px solid transparent;
+    border-bottom: 20px solid #1b1b1b;
+    position: absolute;
+    top: -25px;
+    left: 730px;
+}
+
+.h-1 article ul {
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: block;
+    background: #1b1b1b;
+    padding-right: 220px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.h-1 article:nth-of-type(1):hover ul {
+    opacity: 1;
+    transition: .2s;
+}
+
+.h-1 article ul li {
+    background: #1b1b1b;
+    display: inline-block;
+    padding-right: 20px;
+    /*    position: relative;*/
+}
+
+.h-1 nav article ul li a {
+    vertical-align: middle;
+    display: block;
+}
+
+.h-1 nav article ul li:hover a {
+    color: #fff;
+}
+
+.h-1 nav article:hover ul li:nth-of-type(1):hover .cam {
+    opacity: 1;
+    transition: .2s;
+}
+
+.h-1 article .cam {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 30px 200px 30px 0;
+    background: #1b1b1b;
+    opacity: 0;
+}
+
+.h-1 .cam div {
+    display: inline-block;
+    padding: 0 30px;
+    vertical-align: top;
+}
+
+.h-1 .cam div img {
+    width: 100px;
+    height: 60px;
+}
+
+.cam div a {
+    display: block;
+    font-size: .8em;
+    text-align: left;
+}
+
+.cam div a p {
+    font-size: 1.3em;
+    padding: 5px 0 15px 0;
+    text-align: center;
+}
+
+.h-1 nav article:hover ul li:nth-of-type(2):hover .lense {
+    opacity: 1;
+    transition: .2s;
+}
+
+.h-1 article .lense {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 30px 200px 30px 0;
+    background: #1b1b1b;
+    opacity: 0;
+
+}
+
+.h-1 .lense div {
+    display: inline-block;
+    padding: 0 30px;
+    vertical-align: top;
+}
+
+.h-1 .lense div img {
+    width: 50px;
+    height: 70px;
+}
+
+.lense div a {
+    display: block;
+    font-size: .8em;
+    text-align: left;
+}
+
+.lense div a p {
+    font-size: 1.3em;
+    padding: 5px 0 15px 0;
+    text-align: center;
+}
+
+.h-1 nav article:hover ul li:nth-of-type(3):hover .software {
+    opacity: 1;
+    transition: .2s;
+}
+
+.h-1 article .software {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 30px 200px 30px 0;
+    background: #1b1b1b;
+    opacity: 0;
+}
+
+.h-1 .software div {
+    display: inline-block;
+    padding: 0 30px;
+    vertical-align: top;
+}
+
+.h-1 .software div img {
+    width: 100px;
+    height: 60px;
+}
+
+.software div a {
+    display: block;
+    text-align: center;
+}
+
+.software div a p {
+    padding-top: 5px;
+}
+
+.h-1 nav article:hover ul li:nth-of-type(4):hover .accesory {
+    opacity: 1;
+    transition: .2s;
+}
+
+.h-1 article .accessory {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 30px 500px;
+    background: #1b1b1b;
+    opacity: 0;
+}
+
+.h-1 .accessory div {
+    display: inline-block;
+    padding: 0 30px;
+    vertical-align: top;
+}
+
+.h-1 .accessory div img {
+    width: 50px;
+    height: 60px;
+}
+
+.accessory div a {
+    display: block;
+    text-align: center;
+}
+
+.accessory div a p {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.accessory .acc_top {}
+
+.accessory .acc_bottom {
+    margin-top: 20px;
+}
+
+
+
+main {}
+
+main .gallery:after {
+    content: '';
+    border: 15px solid transparent;
+    border-bottom: 20px solid #1b1b1b;
+    position: absolute;
+    top: 25px;
+    left: 890px;
+}
+
+main .gallery:before {
+    content: '';
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding-left: 850px;
+    background: #1b1b1b;
+    color: #fff;
+    z-index: 1;
+}
+
+main .gallery {
+    padding: 100px;
+    background: #1b1b1b;
+    text-align: center;
+}
+
+main .gallery h1 {
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.gallery .g_navi {
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 5px 20px;
+}
+
+.gallery .g_navi a {
+    color: gray;
+    display: inline-block;
+}
+.gallery .g_navi:hover a{
+    color: #fff;
+}
+.gallery .g_navi a:after {
+    content: '|';
+    padding-left: 5px;
+}
+.gallery .g_navi a:last-child:after{
+    content: '';
+}
+.gallery .g_subnavi{
+    padding-top: 30px;
+}
+.gallery .g_subnavi a{
+    color: gray;
+    font-size: .8em;
+}
+.gallery .g_subnavi:hover a{
+    color: #fff;
+}
+.gallery .g_subnavi a:after{
+    content: '|';
+    padding-left: 3px;
+}
+.gallery .g_subnavi a:last-child:after{
+    content: '';
+}
+
+
+
+
+
+
+.foot {
+    margin-top: 200px;
+    background: #1b1b1b;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.foot p {
+    font-size: .8em;
+    display: inline-block;
+    color: #fff;
+    padding: 16px 150px;
+}
+
+.foot a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+.foot img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+
+}
