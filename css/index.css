@@ -428,7 +428,7 @@ main {}
     opacity: .4;
 }
 
-.tab_head a article {
+.tab_head a span {
     color: #fff;
     text-align: center;
     position: absolute;
@@ -437,13 +437,13 @@ main {}
     z-index: 1;
 }
 
-.tab_head a:hover article {
+.tab_head a:hover span {
     top: 100px;
 }
 
-.tab_head a article h3 {}
+.tab_head a span h3 {}
 
-.tab_head a article p {
+.tab_head a span p {
     padding-top: 50px;
 }
 
@@ -482,7 +482,7 @@ main {}
 
 .tab_body {
     width: 100%;
-    height: 520px;
+    height: 400px;
 }
 
 .tab_body div {
@@ -523,6 +523,7 @@ main {}
 .tab_body div ul li p {
     white-space: pre-line;
     padding-bottom: 15px;
+    font-size: .9em;
 }
 
 .tab_body div ul li a {
@@ -578,7 +579,7 @@ input {
 
 .gallery {
     width: 100%;
-    padding-top: 500px;
+    padding-top: 150px;
     text-align: center;
 }
 
