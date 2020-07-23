@@ -1,0 +1,164 @@
+@import url('common.css');
+
+
+
+header {}
+
+
+.h-1 {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+}
+
+.h-1 h1 {
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+}
+
+
+.navigation{}
+.navigation .navi1{}
+.navigation .navi1 a{
+    display: inline-block;
+    color: darkgray;
+    padding-right: 30px;
+}
+.navigation .navi1 a:last-child{
+    padding-right: 0;
+}
+.navigation .navi1 a:hover{
+    color: #fff;
+}
+.navigation .navi2{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding-left: 35%;
+    background: #1b1b1b;
+    height: 25px;
+}
+.navigation .navi2 ul > a{
+    color: darkgray;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.navigation .navi2 a:hover{
+    color: #fff;
+}
+
+.navi2 ul{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background: #1b1b1b;
+    width: 100%;
+    padding:0 0 0 30%;
+}
+.navi2 ul a{
+    display: inline-block;
+    vertical-align: top;
+}
+.navi3 ul{
+    width: 100%;
+    height: 450px;
+    background: #1b1b1b;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:50px 0 0 30%;
+}
+
+.navi3 ul li > a{
+    color: darkgray;
+    display: block;
+    font-size: .9em;
+    padding-right: 100px;
+}
+.navi3 article div a p{
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.navi3 article div a:hover{
+    color: #fff;
+}
+.navi3 article div img{
+    width: 120px;
+}
+.navi3 article:last-child div{
+    display: block;
+}
+.navi3 article:last-child div ul li{
+    display: inline-block;
+}
+.navi3 article:nth-of-type(2) img{
+    width: 100px;
+    height: 150px;
+    margin-left: 70px;
+}
+.navi3 article:nth-of-type(3) img{
+    width: 150px;
+}
+.navi3 article:nth-of-type(4) img{
+    width: 100px;
+}
+.acc_top ul li:nth-of-type(1) img{
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.h-1 .sign {
+    background: #434343;
+    padding: 1px 0 4px 5px;
+    border-radius: 5px;
+}
+
+.h-1 .sign a {
+    color: #fff;
+    display: inline-block;
+    font-size: .8em;
+}
+
+.h-1 .sign a p {
+    background: url(../img/search-icon%202.png) no-repeat right 2px;
+    width: 50px;
+    display: inline-block;
+}
+
+.h-1 .sign a img {
+    vertical-align: bottom;
+}
+
+.h-1 .sign a:after {
+    content: '|';
+    padding: 0 5px;
+}
+
+.h-1 .sign a:last-child:after {
+    content: '';
+}
+
+
+
+
+
+
