@@ -296,7 +296,6 @@ main .gallery:before {
     padding-left: 850px;
     background: #1b1b1b;
     color: #fff;
-    z-index: 1;
 }
 
 main .gallery {
