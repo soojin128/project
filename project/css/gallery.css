@@ -74,7 +74,7 @@ header {}
     color: #bdbdbd;
 }
 
-.h-1 nav article:hover a {
+.h-1 nav article a:hover {
     color: #fff;
 }
 
@@ -97,12 +97,10 @@ header {}
     background: #1b1b1b;
     padding-right: 220px;
     z-index: 1;
-    opacity: 0;
+    display: none;
 }
-
-.h-1 article:nth-of-type(1):hover ul {
-    opacity: 1;
-    transition: .2s;
+.h-1 article:nth-of-type(1):hover ul{
+    display: block;
 }
 
 .h-1 article ul li {
@@ -113,16 +111,15 @@ header {}
 }
 
 .h-1 nav article ul li a {
-    vertical-align: middle;
     display: block;
 }
 
-.h-1 nav article ul li:hover a {
+.h-1 nav article ul li a:hover {
     color: #fff;
 }
 
 .h-1 nav article:hover ul li:nth-of-type(1):hover .cam {
-    opacity: 1;
+    display: block;
     transition: .2s;
 }
 
@@ -133,7 +130,7 @@ header {}
     top: 25px;
     padding: 30px 200px 30px 0;
     background: #1b1b1b;
-    opacity: 0;
+    display: none;
 }
 
 .h-1 .cam div {
@@ -160,7 +157,7 @@ header {}
 }
 
 .h-1 nav article:hover ul li:nth-of-type(2):hover .lense {
-    opacity: 1;
+    display: block;
     transition: .2s;
 }
 
@@ -171,7 +168,7 @@ header {}
     top: 25px;
     padding: 30px 200px 30px 0;
     background: #1b1b1b;
-    opacity: 0;
+    display: none;
 
 }
 
@@ -199,7 +196,7 @@ header {}
 }
 
 .h-1 nav article:hover ul li:nth-of-type(3):hover .software {
-    opacity: 1;
+    display: block;
     transition: .2s;
 }
 
@@ -210,7 +207,7 @@ header {}
     top: 25px;
     padding: 30px 200px 30px 0;
     background: #1b1b1b;
-    opacity: 0;
+    display: none;
 }
 
 .h-1 .software div {
@@ -234,46 +231,47 @@ header {}
 }
 
 .h-1 nav article:hover ul li:nth-of-type(4):hover .accesory {
-    opacity: 1;
+    display: block;
     transition: .2s;
 }
 
-.h-1 article .accessory {
+.accessory {
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 25px;
-    padding: 30px 500px;
     background: #1b1b1b;
-    opacity: 0;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding: 30px 200px 30px 0;
+    display: none;
 }
-
-.h-1 .accessory div {
+.accessory .acc_top{
+    width: 100%;
+}
+.accessory .acc_top a{
     display: inline-block;
-    padding: 0 30px;
-    vertical-align: top;
+    padding-right: 50px;
+}
+.accessory .acc_bottom{
+    width: 100%;
+}
+.accessory .acc_bottom a{
+    display: inline-block;
+    padding-right: 50px;
+}
+.accessory div img{
+    width: 100px;
+}
+.accessory div p{
+    
+}
+.accessory .acc_top a:nth-of-type(1) img{
+    width: 60px;
+}
+.accessory .acc_top a:nth-of-type(3) img{
+    width: 90px;
 }
 
-.h-1 .accessory div img {
-    width: 50px;
-    height: 60px;
-}
 
-.accessory div a {
-    display: block;
-    text-align: center;
-}
-
-.accessory div a p {
-    padding-top: 5px;
-    text-align: center;
-}
-
-.accessory .acc_top {}
-
-.accessory .acc_bottom {
-    margin-top: 20px;
-}
 
 
 
@@ -302,6 +300,7 @@ main .gallery:before {
 }
 
 main .gallery {
+    width: 100%;
     padding: 100px;
     background: #1b1b1b;
     text-align: center;
@@ -323,7 +322,7 @@ main .gallery h1 {
     color: gray;
     display: inline-block;
 }
-.gallery .g_navi:hover a{
+.gallery .g_navi a:hover{
     color: #fff;
 }
 .gallery .g_navi a:after {
@@ -340,7 +339,7 @@ main .gallery h1 {
     color: gray;
     font-size: .8em;
 }
-.gallery .g_subnavi:hover a{
+.gallery .g_subnavi a:hover{
     color: #fff;
 }
 .gallery .g_subnavi a:after{
@@ -350,6 +349,50 @@ main .gallery h1 {
 .gallery .g_subnavi a:last-child:after{
     content: '';
 }
+.gal{
+    padding-top: 100px;
+}
+.gal ul{
+    padding-top: 10px;
+}
+.gal ul li{
+    border: 1px solid #fff;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.gal ul li a{} 
+.gal ul li a img{
+    width: 400px;
+    height: 400px;
+    
+}
+.gal ul li:hover{
+    border: 1px solid #fcae04;
+}
+.gal ul li article{
+    text-align: left;
+    padding-left: 20px;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    
+    display: none;
+}
+.gal ul li article:after{
+    content: '';
+    width: 400px;
+    height: 150px;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top: -50px;
+    left: -2px;
+}
+.gal ul li:hover article{
+    display: block;
+}
+
 
 
 
@@ -357,7 +400,6 @@ main .gallery h1 {
 
 
 .foot {
-    margin-top: 200px;
     background: #1b1b1b;
     width: 100%;
     height: 50px;
