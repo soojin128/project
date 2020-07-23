@@ -462,7 +462,7 @@ main {}
     background-size: 300px;
 }
 
-.tab_head .tab-3 article {
+.tab_head .tab-3 span {
     left: 70px;
 }
 
@@ -471,7 +471,7 @@ main {}
     background-size: 300px;
 }
 
-.tab_head .tab-4 article {
+.tab_head .tab-4 span {
     left: 85px;
 }
 
