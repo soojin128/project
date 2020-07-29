@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/sub1.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -144,6 +144,11 @@
                 <article><a href="../project/gallery.html">갤러리</a></article>
                 <article><a href="#">고객지원</a></article>
             </nav>
+            <a class="menu-trigger">
+                <span></span>
+                <span></span>
+            </a>
+            
             <div class="sign">
                 <a href="#">
                     <p>검색</p>
@@ -298,7 +303,7 @@
 
         </div>
         <div class="gallery">
-            <a href="#">
+            <a href="https://cameras.olympus.com/gallery/en/">
                 <img src="img/sub1_gallery.jpg" alt="">
                 <h3>global pro gallery</h3>
                 <p>전 세계의 전문 사진 작가가 찍은
@@ -318,5 +323,13 @@
             <p>https://www.olympus-global.com/</p>
         </div>
     </footer>
+    <script>
+        const menu = document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
 
 </body></html>

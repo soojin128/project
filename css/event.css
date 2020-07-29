@@ -27,7 +27,7 @@ header {}
 
 
 .h-1 .sign {
-    background: #434343;
+    background: #313131;
     padding: 1px 0 4px 5px;
     border-radius: 5px;
 }
@@ -179,8 +179,9 @@ header {}
 }
 
 .h-1 .lense div img {
-    width: 50px;
-    height: 70px;
+    padding-left: 80px;
+    width: 140px;
+    height: 80px;
 }
 
 .lense div a {
@@ -269,6 +270,45 @@ header {}
 }
 .accessory .acc_top a:nth-of-type(3) img{
     width: 90px;
+}
+
+
+
+.menu-trigger {
+    width: 20px;
+    height: 10px;
+    position: fixed;
+    top: 15px;
+    right: 5%;
+    display: none;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+    top: 0;
+    transform: translateY(6px) rotate(45deg);
+    transition: .5s;
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+    bottom: 0;
+    transform: translateY(-2px) rotate(-45deg);
+    transition: .5s;
 }
 
 
@@ -384,5 +424,258 @@ main .event article{
     width: 35px;
     height: 35px;
     vertical-align: middle;
+
+}
+
+
+
+/*---------------------------------------480------------------------------*/
+
+@media(max-width:480px) {
+
+
+    .h-1 {
+        width: 100%;
+        height: 40px;
+        background: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .h-1 h1 {
+        text-transform: uppercase;
+        color: #fff;
+        display: inline-block;
+        font-size: 15px;
+        position: absolute;
+        left: 43%;
+        top: 10px;
+    }
+
+
+
+    .h-1 .sign {
+        background: none;
+    }
+
+    .h-1 .sign a {
+        color: #fff;
+        display: none;
+        font-size: .8em;
+    }
+
+    .h-1 .sign a:nth-of-type(2) {
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+
+    .h-1 .sign a p {
+        background: url(../img/search-icon%202.png) no-repeat right 2px;
+        width: 50px;
+        display: inline-block;
+    }
+
+
+    .h-1 .sign a:after {
+        content: '';
+        padding: 0;
+    }
+
+
+    
+     .menu-trigger {
+        display: block;
+    }
+
+
+    
+    .h-1 nav {
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        right: 0;
+        display: block;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 50% 0 0 0;
+        z-index: 1;
+        transform: translateX(100%);
+    }
+
+    .h-1 nav.active {
+        transform: translateX(0);
+        transition: .5s;
+    }
+
+    .h-1 nav article {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .h-1 nav article a {
+        color: #fff;
+        display: block;
+    }
+
+
+    
+    .h-1 article ul {
+        position: static;
+    }
+
+    .h-1 article ul li {
+        background: #1b1b1b;
+        display: inline-block;
+        padding: 0 30px 5px 30px;
+        background: none;
+    }
+
+    .h-1 nav article ul li a {
+        display: block;
+    }
+
+    
+    
+    
+    
+    main {}
+main .event:after{
+    display: none;
+    content: '';
+    border: 15px solid transparent;
+    border-bottom: 20px solid #1b1b1b;
+    position: absolute;
+    top:25px;
+    left: 810px;
+}
+main .event:before{
+    display: none;
+    content: '이벤트';
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    top: 49px;
+    left:0;
+    padding-left: 850px;
+    background: #1b1b1b;
+    color: #fff;
+}
+main .event {
+    width: 100%;
+    padding:100px 20px;
+    
+    }
+
+main .event h2 {
+    border-bottom: 2px solid #313131;
+    padding:0;
+    font-size: 1.3em;
+}
+
+main .event article{
+    width: 100%;
+    padding:50px 0;
+    text-align: center;
+}
+
+.event article ul{}
+
+.event article ul li {
+    width:400px;
+    height:350px ;
+    display: inline-block;
+    border: 2px solid #313131;
+}
+
+.event article ul li a{
+    color: #000;
+}
+.event article ul li:hover a{
+    color: #fcae04;
+}
+.event article ul li:hover{
+   border: 2px solid #fcae04; 
+}
+
+.event article ul li img {
+    width:396px;
+    height: 250px;
+}
+
+.event article ul li h3 {
+    text-align: left;
+    padding: 10px 0 0 10px;
+    font-size: 1em;
+}
+.event article ul li p {
+    text-align: left;
+    padding: 40px 0 0 10px;
+    font-size: .7em;
+}
+
+.event article ul li p strong {}
+
+.event article ul li:nth-of-type(1){
+    margin-right:0;
+}
+.event article ul li:nth-of-type(2),
+.event article ul li:nth-of-type(3){
+    margin-top:30px;
+}
+
+    
+    
+    
+    
+    .foot {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        background: #1b1b1b;
+        width: 100%;
+        height: 60px;
+    }
+
+    .foot p {
+        position: absolute;
+        top: 25px;
+        font-size: .7em;
+        color: #fff;
+        padding: 0;
+    }
+
+    .foot p:nth-of-type(1) {
+        left: 60px;
+    }
+
+    .foot p:nth-of-type(2) {
+        right: 20px;
+    }
+
+    .foot a {
+        position: absolute;
+        top: 20px;
+        padding: 0;
+    }
+
+    .foot a:nth-of-type(1) {
+        left: 240px;
+    }
+
+    .foot a:nth-of-type(2) {
+        left: 210px;
+    }
+
+    .foot img {
+        width: 25px;
+        height: 25px;
+
+    }
 
 }

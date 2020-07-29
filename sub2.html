@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/sub2.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="h-1">
             <a href="../project/index.html">
                 <h1>olympus</h1>
@@ -144,6 +144,10 @@
                 <article><a href="../project/gallery.html">갤러리</a></article>
                 <article><a href="#">고객지원</a></article>
             </nav>
+            <a class="menu-trigger">
+                <span></span>
+                <span></span>
+            </a>
             <div class="sign">
                 <a href="#">
                     <p>검색</p>
@@ -179,7 +183,7 @@
             </span>
             <nav>
                 <a href="#">즉시구매</a>
-                <a href="#top">개요</a>
+                <a href="#contents">개요</a>
                 <a href="#middle">주요사양</a>
                 <a href="#bottom">액세서리</a>
             </nav>
@@ -199,7 +203,7 @@
                 *1. 2020 년 2 월 12 일 현재 발매 된 렌즈 교환식 카메라에서
             </p>
         </div>
-        <div id="top" class="contents">
+        <div class="contents" id="conents">
             <div class="c-1">
                 <img src="img/sub2_main1.jpg" alt="">
                 <article>
@@ -309,33 +313,33 @@
         </div>
         <div id="bottom" class="acc">
             <h3>액세서리</h3>
-            
-                <article>
-                    <a href="#">
-                        <img src="img/sub2_acc1.jpg" alt="">
-                        <p>전자 플래시 FL-900R</p>
-                    </a>
-                    <a href="#">
-                        <img src="img/sub2_acc2.jpg" alt="">
-                        <p>전자 플래시 FL-700WR</p>
-                    </a>
-                    <a href="#">
-                        <img src="img/sub2_acc3.jpg" alt="">
-                        <p>소프트 카메라 케이스 CS-42SF</p>
-                    </a>
-                    <a href="#">
-                        <img src="img/sub2_acc4.jpg" alt="">
-                        <p>카메라 가방 CBG-12</p>
-                    </a>
-                    <a href="#">
-                        <img src="img/sub2_acc5.jpg" alt="">
-                        <p>발수 미즈모토 가죽
-                            스트랩 CSS-S119L</p>
-                    </a>
-                    <a href="#">
-                        <img src="img/sub2_acc6.jpg" alt="">
-                        <p>숄더 스트랩 CSS-P113</p>
-                    </a>
+
+            <article>
+                <a href="#">
+                    <img src="img/sub2_acc1.jpg" alt="">
+                    <p>전자 플래시 FL-900R</p>
+                </a>
+                <a href="#">
+                    <img src="img/sub2_acc2.jpg" alt="">
+                    <p>전자 플래시 FL-700WR</p>
+                </a>
+                <a href="#">
+                    <img src="img/sub2_acc3.jpg" alt="">
+                    <p>소프트 카메라 케이스 CS-42SF</p>
+                </a>
+                <a href="#">
+                    <img src="img/sub2_acc4.jpg" alt="">
+                    <p>카메라 가방 CBG-12</p>
+                </a>
+                <a href="#">
+                    <img src="img/sub2_acc5.jpg" alt="">
+                    <p>발수 미즈모토 가죽
+                        스트랩 CSS-S119L</p>
+                </a>
+                <a href="#">
+                    <img src="img/sub2_acc6.jpg" alt="">
+                    <p>숄더 스트랩 CSS-P113</p>
+                </a>
             </article>
         </div>
     </main>
@@ -347,7 +351,7 @@
 
 
 
-    
+
     <footer>
         <div class="foot">
             <p>TEL :02)6255-3344</p>
@@ -360,6 +364,17 @@
             <p>https://www.olympus-global.com/</p>
         </div>
     </footer>
+    
+    
+    <script>
+        const menu = document.querySelector('.menu-trigger');
+        const nav = document.querySelector('nav');
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
+
 
 
 </body></html>

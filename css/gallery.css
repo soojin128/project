@@ -27,7 +27,7 @@ header {}
 
 
 .h-1 .sign {
-    background: #434343;
+    background: #313131;
     padding: 1px 0 4px 5px;
     border-radius: 5px;
 }
@@ -179,10 +179,10 @@ header {}
 }
 
 .h-1 .lense div img {
-    width: 50px;
-    height: 70px;
+    padding-left: 80px;
+    width: 140px;
+    height: 80px;
 }
-
 .lense div a {
     display: block;
     font-size: .8em;
@@ -273,6 +273,45 @@ header {}
 
 
 
+.menu-trigger {
+    width: 20px;
+    height: 10px;
+    position: fixed;
+    top: 15px;
+    right: 5%;
+    display: none;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+    top: 0;
+    transform: translateY(6px) rotate(45deg);
+    transition: .5s;
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+    bottom: 0;
+    transform: translateY(-2px) rotate(-45deg);
+    transition: .5s;
+}
+
+
+
 
 
 main {}
@@ -296,7 +335,6 @@ main .gallery:before {
     padding-left: 850px;
     background: #1b1b1b;
     color: #fff;
-    z-index: 1;
 }
 
 main .gallery {
@@ -425,3 +463,298 @@ main .gallery h1 {
     vertical-align: middle;
 
 }
+
+
+
+
+
+/*---------------------------------------480------------------------------*/
+
+@media(max-width:480px) {
+
+
+    .h-1 {
+        width: 100%;
+        height: 40px;
+        background: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .h-1 h1 {
+        text-transform: uppercase;
+        color: #fff;
+        display: inline-block;
+        font-size: 15px;
+        position: absolute;
+        left: 43%;
+        top: 10px;
+    }
+
+
+
+    .h-1 .sign {
+        background: none;
+    }
+
+    .h-1 .sign a {
+        color: #fff;
+        display: none;
+        font-size: .8em;
+    }
+
+    .h-1 .sign a:nth-of-type(2) {
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+
+    .h-1 .sign a p {
+        background: url(../img/search-icon%202.png) no-repeat right 2px;
+        width: 50px;
+        display: inline-block;
+    }
+
+
+    .h-1 .sign a:after {
+        content: '';
+        padding: 0;
+    }
+
+
+    
+     .menu-trigger {
+        display: block;
+    }
+
+
+    
+    .h-1 nav {
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        right: 0;
+        display: block;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 50% 0 0 0;
+        z-index: 1;
+        transform: translateX(100%);
+    }
+
+    .h-1 nav.active {
+        transform: translateX(0);
+        transition: .5s;
+    }
+
+    .h-1 nav article {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .h-1 nav article a {
+        color: #fff;
+        display: block;
+    }
+
+
+    
+    .h-1 article ul {
+        position: static;
+    }
+
+    .h-1 article ul li {
+        background: #1b1b1b;
+        display: inline-block;
+        padding: 0 30px 5px 30px;
+        background: none;
+    }
+
+    .h-1 nav article ul li a {
+        display: block;
+    }
+
+    
+    
+    
+    
+    
+    
+    main {}
+    
+    main .gallery:after {
+        display: none;
+    content: '';
+    border: 15px solid transparent;
+    border-bottom: 20px solid #1b1b1b;
+    position: absolute;
+    top: 25px;
+    left: 890px;
+}
+
+main .gallery:before {
+    display: none;
+    content: '';
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding-left: 850px;
+    background: #1b1b1b;
+    color: #fff;
+}
+
+main .gallery {
+    width: 100%;
+    padding:100px 0;
+    background: #1b1b1b;
+    text-align: center;
+}
+
+main .gallery h1 {
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 30px;
+    font-size: 1.3em;
+}
+
+.gallery .g_navi {
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 0 20px;
+}
+
+.gallery .g_navi a {
+    color: gray;
+    display: inline-block;
+    font-size: .7em;
+}
+.gallery .g_navi a:hover{
+    color: #fff;
+}
+.gallery .g_navi a:after {
+    content: '|';
+    padding-left: 5px;
+}
+.gallery .g_navi a:last-child:after{
+    content: '';
+}
+.gallery .g_subnavi{
+    padding-top: 10px;
+}
+.gallery .g_subnavi a{
+    color: gray;
+    font-size: .6em;
+}
+.gallery .g_subnavi a:hover{
+    color: #fff;
+}
+.gallery .g_subnavi a:after{
+    content: '|';
+    padding-left: 3px;
+}
+.gallery .g_subnavi a:last-child:after{
+    content: '';
+}
+.gal{
+    padding-top: 50px;
+}
+.gal ul{
+    padding-top: 10px;
+}
+.gal ul li{
+    border: 1px solid #fff;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+   margin-top: 30px;
+}
+.gal ul li a{} 
+.gal ul li a img{
+    width: 398px;
+    height: 400px;
+    
+}
+.gal ul li:hover{
+    border: 1px solid #fcae04;
+}
+.gal ul li article{
+    text-align: left;
+    padding-left: 20px;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    display:block;
+    color: #fff;
+}
+.gal ul li article:after{
+    content: '';
+    width: 400px;
+    height: 150px;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+.gal ul li:hover article{
+    display: block;
+}
+
+
+    
+    
+    
+    .foot {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        background: #1b1b1b;
+        width: 100%;
+        height: 60px;
+    }
+
+    .foot p {
+        position: absolute;
+        top: 25px;
+        font-size: .7em;
+        color: #fff;
+        padding: 0;
+    }
+
+    .foot p:nth-of-type(1) {
+        left: 60px;
+    }
+
+    .foot p:nth-of-type(2) {
+        right: 20px;
+    }
+
+    .foot a {
+        position: absolute;
+        top: 20px;
+        padding: 0;
+    }
+
+    .foot a:nth-of-type(1) {
+        left: 240px;
+    }
+
+    .foot a:nth-of-type(2) {
+        left: 210px;
+    }
+
+    .foot img {
+        width: 25px;
+        height: 25px;
+
+    }
+
+}
+

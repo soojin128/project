@@ -27,7 +27,7 @@ header {}
 
 
 .h-1 .sign {
-    background: #434343;
+    background: #313131;
     padding: 1px 0 4px 5px;
     border-radius: 5px;
 }
@@ -67,7 +67,7 @@ header {}
 .h-1 nav article {
     text-align: center;
     display: inline-block;
-    padding: 0 15px; 
+    padding: 0 15px;
 }
 
 .h-1 nav article a {
@@ -99,7 +99,8 @@ header {}
     z-index: 1;
     display: none;
 }
-.h-1 article:nth-of-type(1):hover ul{
+
+.h-1 article:nth-of-type(1):hover ul {
     display: block;
 }
 
@@ -179,8 +180,9 @@ header {}
 }
 
 .h-1 .lense div img {
-    width: 50px;
-    height: 70px;
+    padding-left: 80px;
+    width: 140px;
+    height: 0px;
 }
 
 .lense div a {
@@ -244,31 +246,77 @@ header {}
     padding: 30px 200px 30px 0;
     display: none;
 }
-.accessory .acc_top{
+
+.accessory .acc_top {
     width: 100%;
 }
-.accessory .acc_top a{
+
+.accessory .acc_top a {
     display: inline-block;
     padding-right: 50px;
 }
-.accessory .acc_bottom{
+
+.accessory .acc_bottom {
     width: 100%;
 }
-.accessory .acc_bottom a{
+
+.accessory .acc_bottom a {
     display: inline-block;
     padding-right: 50px;
 }
-.accessory div img{
+
+.accessory div img {
     width: 100px;
 }
-.accessory div p{
-    
-}
-.accessory .acc_top a:nth-of-type(1) img{
+
+.accessory div p {}
+
+.accessory .acc_top a:nth-of-type(1) img {
     width: 60px;
 }
-.accessory .acc_top a:nth-of-type(3) img{
+
+.accessory .acc_top a:nth-of-type(3) img {
     width: 90px;
+}
+
+
+
+
+.menu-trigger {
+    width: 20px;
+    height: 10px;
+    position: fixed;
+    top: 15px;
+    right: 5%;
+    display: none;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+    top: 0;
+    transform: translateY(6px) rotate(45deg);
+    transition: .5s;
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+    bottom: 0;
+    transform: translateY(-2px) rotate(-45deg);
+    transition: .5s;
 }
 
 
@@ -293,16 +341,16 @@ main .spot a {
 }
 
 main .spot a img {
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
 main .spot article {
     position: absolute;
-    top: -550px;
-    left: 200px;
-    border-left: 5px solid #8286ac;
-    color: #000;
+    top: -600px;
+    left: 50px;
+    border-left: 5px solid #000;
+    color: #fff;
     padding-left: 20px;
 }
 
@@ -318,8 +366,8 @@ main .spot a p {
     display: inline-block;
     padding: 10px;
     position: absolute;
-    left: 240px;
-    top: -400px;
+    left: 90px;
+    top: -450px;
 }
 
 main .contents {
@@ -337,18 +385,18 @@ main .contents ul {}
 
 main .contents ul li {
     display: inline-block;
-    
     width: 350px;
     height: 350px;
     vertical-align: top;
     margin: 0 30px 30px 0;
-    
+
 }
 
-main .contents ul li:hover a{
-    border: 2px solid #fcae04;
-    color: #fcae04;
+main .contents ul li:hover a {
+    border: 2px solid tomato;
+    color: tomato;
 }
+
 main .contents ul li:last-child {
     margin-right: 0;
 }
@@ -366,9 +414,6 @@ main .contents ul li a {
 main .contents ul li a img {
     width: 150px;
     float: right;
-    position: relative;
-    right: 0;
-    bottom:0;
 }
 
 main .contents ul li a h3 {
@@ -381,73 +426,91 @@ main .contents ul li a p {
     white-space: pre-line;
     font-size: .9em;
 }
-main .omd ul li a img{}
-.omd ul li:nth-of-type(1) a img{
-    bottom: -50px;
+
+main .omd ul li a img {}
+
+.omd ul li:nth-of-type(1) a img {
+    padding-top: 50px;
 }
-.omd ul li:nth-of-type(2) a img{
-    bottom: -80px;
+
+.omd ul li:nth-of-type(2) a img {
+    padding-top: 80px;
 }
-.omd ul li:nth-of-type(3) a img{
-    bottom: -80px;
+
+.omd ul li:nth-of-type(3) a img {
+    padding-top: 80px;
 }
-.omd ul li:nth-of-type(4) a img{
-bottom: -120px;
+
+.omd ul li:nth-of-type(4) a img {
+    padding-top: 120px;
 }
-main .pen ul li a img{}
-.pen ul li:nth-of-type(1) a img{
-    bottom: -120px;
+
+main .pen ul li a img {}
+
+.pen ul li:nth-of-type(1) a img {
+    padding-top: 120px;
 }
-.pen ul li:nth-of-type(2) a img{
-    bottom: -80px;
+
+.pen ul li:nth-of-type(2) a img {
+    padding-top: 80px;
 }
-.pen ul li:nth-of-type(3) a img{
-    bottom: -120px;
+
+.pen ul li:nth-of-type(3) a img {
+    padding-top: 120px;
 }
-.pen ul li:nth-of-type(4) a img{
-    bottom: -100px;
+
+.pen ul li:nth-of-type(4) a img {
+    padding-top: 100px;
 }
+
 main .lense ul li a img {
     width: 100px;
     right: 10px;
 }
-.lense ul li:nth-of-type(1) a img{
-    bottom: -40px;
+
+.lense ul li:nth-of-type(1) a img {
+    padding-top: 40px;
 }
+
 .lense ul li:nth-of-type(2) a img {
-     bottom: -80px;
+    padding-top: 80px;
 }
 
 .lense ul li:nth-of-type(3) a img {
-     bottom: -100px;
+    padding-top: 100px;
 }
 
 .lense ul li:nth-of-type(4) a img {
-     bottom: -140px;
+    padding-top: 140px;
 }
-main .gallery{
+
+main .gallery {
     text-align: center;
     padding-top: 100px;
 }
-main .gallery a{
+
+main .gallery a {
     color: #000;
     width: 100%;
     position: relative;
     left: 0;
     top: 0;
 }
-main .gallery a img{
+
+main .gallery a img {
     width: 80%;
     box-shadow: 0 0 20px rgba(48, 48, 48, 0.7);
 }
-main .gallery a h3{
+
+main .gallery a h3 {
     position: absolute;
     top: -180px;
     left: 150px;
     text-transform: uppercase;
     font-size: 2em;
 }
-main .gallery a p{
+
+main .gallery a p {
     position: absolute;
     left: 150px;
     top: -100px;
@@ -480,5 +543,326 @@ main .gallery a p{
     width: 35px;
     height: 35px;
     vertical-align: middle;
+
+}
+
+
+/*---------------------------------------480------------------------------*/
+
+@media(max-width:480px) {
+
+
+
+    .h-1 {
+        width: 100%;
+        height: 40px;
+        background: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .h-1 h1 {
+        text-transform: uppercase;
+        color: #fff;
+        display: inline-block;
+        font-size: 15px;
+        position: absolute;
+        left: 43%;
+        top: 10px;
+    }
+
+
+
+
+
+    .h-1 .sign {
+        background: none;
+    }
+
+    .h-1 .sign a {
+        color: #fff;
+        display: none;
+        font-size: .8em;
+    }
+
+    .h-1 .sign a:nth-of-type(2) {
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+
+    .h-1 .sign a p {
+        background: url(../img/search-icon%202.png) no-repeat right 2px;
+        width: 50px;
+        display: inline-block;
+    }
+
+
+    .h-1 .sign a:after {
+        content: '';
+        padding: 0;
+    }
+
+
+
+
+    .h-1 nav {
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        right: 0;
+        display: block;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 50% 0 0 0;
+        z-index: 1;
+        transform: translateX(100%);
+    }
+
+    .h-1 nav.active {
+        transform: translateX(0);
+        transition: .5s;
+    }
+
+    .h-1 nav article {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .h-1 nav article a {
+        color: #fff;
+        display: block;
+    }
+
+
+    .h-1 article ul {
+        position: static;
+    }
+
+    .h-1 article ul li {
+        background: #1b1b1b;
+        display: inline-block;
+        padding: 0 30px 5px 30px;
+        background: none;
+    }
+
+    .h-1 nav article ul li a {
+        display: block;
+    }
+
+
+
+    .menu-trigger {
+        display: block;
+    }
+
+    .spot {
+        display: none;
+    }
+
+
+    main .contents {
+        width: 100%;
+        height: 1400px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    main .contents div {
+        width: 100%;
+    }
+
+    main .contents ul {}
+
+    main .contents ul li {
+        display: inline-block;
+        width: 45%;
+        height: 200px;
+        vertical-align: top;
+        margin: 10px 0 0 0;
+    }
+
+
+    main .contents ul li a {
+        display: inline-block;
+        border: 2px solid #000;
+        color: #000;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    main .contents ul li a img {
+        width: 160px;
+        float: none;
+    }
+
+    main .contents ul li a h3 {
+        font-size: 1em;
+        text-transform: uppercase;
+        white-space: pre-line;
+    }
+
+    main .contents ul li a p {
+        display: none;
+    }
+
+    main .omd ul li a img {}
+
+    .omd ul li:nth-of-type(1) a img {
+        padding: 20px 0 0 30px;
+    }
+
+    .omd ul li:nth-of-type(2) a img {
+        padding: 65px 0 0 30px;
+    }
+
+    .omd ul li:nth-of-type(3) a img {
+        padding: 65px 0 0 30px;
+    }
+
+    .omd ul li:nth-of-type(4) a img {
+        padding: 65px 0 0 30px;
+    }
+
+    main .pen ul li a img {}
+
+    .pen ul li:nth-of-type(1) a img {
+        padding: 80px 0 0 30px;
+    }
+
+    .pen ul li:nth-of-type(2) a img {
+        padding: 80px 0 0 30px;
+    }
+
+    .pen ul li:nth-of-type(3) a img {
+        padding: 80px 0 0 30px;
+    }
+
+    .pen ul li:nth-of-type(4) a img {
+        padding: 80px 0 0 30px;
+    }
+
+    main .lense ul li a img {
+        width: 130px;
+
+    }
+
+    .lense ul li:nth-of-type(1) a img {
+        padding: 20px 0 0 50px;
+    }
+
+    .lense ul li:nth-of-type(2) a img {
+        padding: 50px 0 0 50px;
+    }
+
+    .lense ul li:nth-of-type(3) a img {
+        padding: 100px 0 0 50px;
+    }
+
+    .lense ul li:nth-of-type(4) a img {
+        padding: 80px 0 0 50px;
+    }
+
+
+
+    main .gallery {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    main .gallery a {
+        color: #000;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 100px;
+    }
+
+    main .gallery a img {
+        width: 90%;
+        box-shadow: 0 0 20px rgba(48, 48, 48, 0.7);
+    }
+
+    main .gallery a h3 {
+        position: absolute;
+        top: -55px;
+        left: 20px;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+
+    main .gallery a p {
+        position: absolute;
+        left: 20px;
+        top: -25px;
+        white-space: pre-line;
+        text-align: left;
+        font-size: .8em;
+    }
+
+    
+    
+    
+    .foot {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        background: #1b1b1b;
+        width: 100%;
+        height: 60px;
+    }
+
+    .foot p {
+        position: absolute;
+        top: 25px;
+        font-size: .7em;
+        color: #fff;
+        padding: 0;
+    }
+
+    .foot p:nth-of-type(1) {
+        left: 60px;
+    }
+
+    .foot p:nth-of-type(2) {
+        right: 20px;
+    }
+
+    .foot a {
+        position:absolute;
+        top: 20px;
+        padding: 0;
+    }
+
+    .foot a:nth-of-type(1) {
+        left: 240px;
+    }
+    .foot a:nth-of-type(2) {
+        left: 210px;
+    }
+
+    .foot img {
+        width: 25px;
+        height: 25px;
+
+    }
+
+
+
+
+
+
+
+
+
 
 }
