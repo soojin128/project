@@ -372,33 +372,29 @@ main .spot a p {
 
 main .contents {
     width: 100%;
-    height: 1300px;
     padding-top: 100px;
     text-align: center;
 }
 
 main .contents div {
     width: 100%;
+    padding-bottom: 20px;
 }
 
-main .contents ul {}
+main .contents div ul {
+    width: 100%;
+}
 
-main .contents ul li {
+main .contents div ul li {
     display: inline-block;
     width: 350px;
     height: 350px;
     vertical-align: top;
-    margin: 0 30px 30px 0;
-
 }
 
 main .contents ul li:hover a {
     border: 2px solid tomato;
     color: tomato;
-}
-
-main .contents ul li:last-child {
-    margin-right: 0;
 }
 
 main .contents ul li a {
@@ -485,92 +481,114 @@ main .lense ul li a img {
 }
 
 main .gallery {
-    text-align: center;
-    padding-top: 100px;
-}
-
-main .gallery a {
-    color: #000;
     width: 100%;
-    position: relative;
-    left: 0;
-    top: 0;
+    text-align: center;
+    padding: 100px 0 100px 0;
 }
 
-main .gallery a img {
-    width: 80%;
-    box-shadow: 0 0 20px rgba(48, 48, 48, 0.7);
+main .gallery div {
+    width: 100%;
+    background: url(../img/sub1_gallery.jpg) no-repeat center;
+    background-size: 75%;
+    height: 250px;
+   
 }
 
-main .gallery a h3 {
-    position: absolute;
-    top: -180px;
-    left: 150px;
+main .gallery div a {
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    width: 75%;
+    height: 250px;
+    text-align: left; box-shadow:  0 0 20px rgba(48, 48, 48, 0.7);
+}
+
+main .gallery div a h3 {
     text-transform: uppercase;
     font-size: 2em;
+    padding:80px 0 0 200px;
 }
 
-main .gallery a p {
-    position: absolute;
-    left: 150px;
-    top: -100px;
+main .gallery div a p {
     white-space: pre-line;
-    text-align: left;
+    padding: 10px 0 0 200px;
 }
+
+
+
 
 .foot {
-    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #1b1b1b;
     width: 100%;
     height: 50px;
-    text-align: center;
+    padding: 0 15%;
 }
 
 .foot p {
     font-size: .8em;
     display: inline-block;
     color: #fff;
-    padding: 16px 150px;
 }
 
-.foot a {
+.foot div {
+    height: 35px;
     display: inline-block;
-    vertical-align: middle;
-    padding: 0 5px;
+}
+
+.foot div a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    padding: 0;
 }
 
 .foot img {
-    width: 35px;
-    height: 35px;
-    vertical-align: middle;
+    width: 100%;
+    height: 100%;
 
 }
+
 
 
 /*---------------------------------------480------------------------------*/
 
-@media(max-width:480px) {
+@media(max-width:768px) {
 
 
+    body {
+        width: 100%;
+    }
 
-    .h-1 {
+    header {
         width: 100%;
         height: 40px;
-        background: #000;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 1;
     }
 
+    .h-1 {
+        width: 100%;
+        height: 40px;
+        background: #000;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+
+
     .h-1 h1 {
         text-transform: uppercase;
         color: #fff;
         display: inline-block;
-        font-size: 15px;
-        position: absolute;
-        left: 43%;
-        top: 10px;
+        font-size: 20px;
+        padding-top: 5px;
     }
 
 
@@ -579,7 +597,10 @@ main .gallery a p {
 
     .h-1 .sign {
         background: none;
+        padding: 1px 0 4px 5px;
+        border-radius: 5px;
     }
+
 
     .h-1 .sign a {
         color: #fff;
@@ -600,10 +621,19 @@ main .gallery a p {
         display: inline-block;
     }
 
+    .h-1 .sign a img {
+        vertical-align: bottom;
+    }
+
+
 
     .h-1 .sign a:after {
         content: '';
         padding: 0;
+    }
+
+    .h-1 .sign a:last-child:after {
+        content: '';
     }
 
 
@@ -611,16 +641,14 @@ main .gallery a p {
 
     .h-1 nav {
         position: fixed;
-        height: 100%;
-        width: 50%;
         top: 0;
         right: 0;
-        display: block;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.4);
-        padding: 50% 0 0 0;
-        z-index: 1;
+        width: 50%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        padding-top: 40%;
         transform: translateX(100%);
+        transition: .5s;
     }
 
     .h-1 nav.active {
@@ -629,8 +657,10 @@ main .gallery a p {
     }
 
     .h-1 nav article {
+        width: 100%;
         display: block;
-        padding-top: 30px;
+        text-align: center;
+        padding-top: 50px;
     }
 
     .h-1 nav article a {
@@ -639,53 +669,327 @@ main .gallery a p {
     }
 
 
+    .h-1 nav article a:hover {
+        color: #fff;
+    }
+
+    .h-1 article ul:before {
+        display: none;
+        content: '';
+        border: 15px solid transparent;
+        border-bottom: 20px solid #1b1b1b;
+        position: absolute;
+        top: -25px;
+        left: 730px;
+    }
+
     .h-1 article ul {
-        position: static;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background: none;
+        padding-right: 0;
+    }
+
+    .h-1 article:nth-of-type(1):hover ul {
+        display: none;
     }
 
     .h-1 article ul li {
-        background: #1b1b1b;
-        display: inline-block;
-        padding: 0 30px 5px 30px;
-        background: none;
+        width: 50%;
+        height: 100%;
+        display: none;
+        padding: 0;
     }
 
+
     .h-1 nav article ul li a {
-        display: block;
+        display: none;
     }
+
+    .h-1 nav article ul li a:hover {
+        color: #fff;
+    }
+
+    .h-1 nav article:hover ul li:nth-of-type(1):hover .cam {
+        display: block;
+        transition: .2s;
+    }
+
+    .h-1 article .cam {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        padding: 30px 200px 30px 0;
+        background: #1b1b1b;
+        display: none;
+    }
+
+    .h-1 .cam div {
+        display: inline-block;
+        padding: 0 30px;
+        vertical-align: top;
+    }
+
+    .h-1 .cam div img {
+        width: 100px;
+        height: 60px;
+    }
+
+    .cam div a {
+        display: block;
+        font-size: .8em;
+        text-align: left;
+    }
+
+    .cam div a p {
+        font-size: 1.3em;
+        padding: 5px 0 15px 0;
+        text-align: center;
+    }
+
+    .h-1 nav article:hover ul li:nth-of-type(2):hover .lense {
+        display: none;
+        transition: .2s;
+    }
+
+    .h-1 article .lense {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        padding: 30px 200px 30px 0;
+        background: #1b1b1b;
+        display: none;
+
+    }
+
+    .h-1 .lense div {
+        display: inline-block;
+        padding: 0 30px;
+        vertical-align: top;
+    }
+
+    .h-1 .lense div img {
+        width: 50px;
+        height: 70px;
+    }
+
+    .lense div a {
+        display: none;
+        font-size: .8em;
+        text-align: left;
+    }
+
+    .lense div a p {
+        font-size: 1.3em;
+        padding: 5px 0 15px 0;
+        text-align: center;
+    }
+
+    .h-1 nav article:hover ul li:nth-of-type(3):hover .software {
+        display: none;
+        transition: .2s;
+    }
+
+    .h-1 article .software {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        padding: 30px 200px 30px 0;
+        background: #1b1b1b;
+        display: none;
+    }
+
+    .h-1 .software div {
+        display: inline-block;
+        padding: 0 30px;
+        vertical-align: top;
+    }
+
+    .h-1 .software div img {
+        width: 100px;
+        height: 60px;
+    }
+
+    .software div a {
+        display: none;
+        text-align: center;
+    }
+
+    .software div a p {
+        padding-top: 5px;
+    }
+
+    .h-1 nav article:hover ul li:nth-of-type(4):hover .accessory {
+        display: none;
+        transition: .2s;
+    }
+
+    .accessory {
+        width: 100%;
+        background: #1b1b1b;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        padding: 30px 200px 30px 0;
+        display: none;
+    }
+
+    .accessory .acc_top {
+        width: 100%;
+    }
+
+    .accessory .acc_top a {
+        display: inline-block;
+        padding-right: 50px;
+    }
+
+    .accessory .acc_bottom {
+        width: 100%;
+    }
+
+    .accessory .acc_bottom a {
+        display: inline-block;
+        padding-right: 50px;
+    }
+
+    .accessory div img {
+        width: 100px;
+    }
+
+    .accessory div p {}
+
+    .accessory .acc_top a:nth-of-type(1) img {
+        width: 60px;
+    }
+
+    .accessory .acc_top a:nth-of-type(3) img {
+        width: 90px;
+    }
+
+
 
 
 
     .menu-trigger {
+        width: 20px;
+        height: 10px;
+        position: fixed;
+        top: 15px;
+        right: 5%;
         display: block;
     }
 
-    .spot {
-        display: none;
+    .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+
+    .menu-trigger span:nth-of-type(1) {
+        top: 0;
+    }
+
+    .menu-trigger span:nth-of-type(2) {
+        bottom: 0;
+    }
+
+    .menu-trigger.active span:nth-of-type(1) {
+        top: 0;
+        transform: translateY(6px) rotate(45deg);
+        transition: .5s;
+    }
+
+    .menu-trigger.active span:nth-of-type(2) {
+        bottom: 0;
+        transform: translateY(-2px) rotate(-45deg);
+        transition: .5s;
     }
 
 
+
+
+
+
+    main {}
+
+
+    main .spot {
+        display: none;
+        width: 100%;
+        height: 700px;
+        text-align: center;
+        background: #000;
+
+    }
+
+    main .spot a {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    main .spot a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .spot article {
+        position: absolute;
+        top: -600px;
+        left: 50px;
+        border-left: 5px solid #000;
+        color: #fff;
+        padding-left: 20px;
+    }
+
+    main .spot a article h2 {}
+
+    main .spot a article h3 {
+        font-size: 4em;
+    }
+
+    main .spot a p {
+        color: #f00;
+        border: 2px solid #f00;
+        display: inline-block;
+        padding: 10px;
+        position: absolute;
+        left: 90px;
+        top: -450px;
+    }
+
     main .contents {
         width: 100%;
-        height: 1400px;
         padding-top: 100px;
         text-align: center;
     }
 
     main .contents div {
         width: 100%;
+        padding-bottom: 20px;
     }
 
-    main .contents ul {}
+    main .contents div ul {
+        width: 100%;
+    }
 
-    main .contents ul li {
+    main .contents div ul li {
         display: inline-block;
-        width: 45%;
-        height: 200px;
+        width: 300px;
+        height: 350px;
         vertical-align: top;
-        margin: 10px 0 0 0;
     }
 
+    main .contents ul li:hover a {
+        border: 2px solid tomato;
+        color: tomato;
+    }
 
     main .contents ul li a {
         display: inline-block;
@@ -693,13 +997,13 @@ main .gallery a p {
         color: #000;
         text-align: left;
         width: 100%;
-        height: 100%;
+        height: 300px;
         padding: 10px;
     }
 
     main .contents ul li a img {
-        width: 160px;
-        float: none;
+        width: 150px;
+        float: right;
     }
 
     main .contents ul li a h3 {
@@ -709,155 +1013,140 @@ main .gallery a p {
     }
 
     main .contents ul li a p {
-        display: none;
+        white-space: pre-line;
+        font-size: .8em;
     }
 
     main .omd ul li a img {}
 
     .omd ul li:nth-of-type(1) a img {
-        padding: 20px 0 0 30px;
+        padding-top: 0;
     }
 
     .omd ul li:nth-of-type(2) a img {
-        padding: 65px 0 0 30px;
+        padding-top: 30px;
     }
 
     .omd ul li:nth-of-type(3) a img {
-        padding: 65px 0 0 30px;
+        padding-top: 50px;
     }
 
     .omd ul li:nth-of-type(4) a img {
-        padding: 65px 0 0 30px;
+        padding-top: 65px;
     }
 
     main .pen ul li a img {}
 
     .pen ul li:nth-of-type(1) a img {
-        padding: 80px 0 0 30px;
+        padding-top: 70px;
     }
 
     .pen ul li:nth-of-type(2) a img {
-        padding: 80px 0 0 30px;
+        padding-top: 50px;
     }
 
     .pen ul li:nth-of-type(3) a img {
-        padding: 80px 0 0 30px;
+        padding-top: 70px;
     }
 
     .pen ul li:nth-of-type(4) a img {
-        padding: 80px 0 0 30px;
+        padding-top: 70px;
     }
 
     main .lense ul li a img {
-        width: 130px;
-
+        width: 80px;
+        right: 10px;
     }
 
     .lense ul li:nth-of-type(1) a img {
-        padding: 20px 0 0 50px;
+        padding-top: 30px;
     }
 
     .lense ul li:nth-of-type(2) a img {
-        padding: 50px 0 0 50px;
+        padding-top: 60px;
     }
 
     .lense ul li:nth-of-type(3) a img {
-        padding: 100px 0 0 50px;
+        padding-top: 80px;
     }
 
     .lense ul li:nth-of-type(4) a img {
-        padding: 80px 0 0 50px;
+        padding-top: 110px;
     }
-
-
 
     main .gallery {
-        width: 100%;
-        height: 250px;
-        text-align: center;
-        padding-top: 0;
-    }
+    width: 100%;
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
 
-    main .gallery a {
-        color: #000;
-        width: 100%;
-        position: relative;
-        left: 0;
-        top: 100px;
-    }
+main .gallery div {
+    width: 100%;
+    background: url(../img/sub1_gallery.jpg) no-repeat center;
+    background-size: 75%;
+    height: 100px;
+   
+}
 
-    main .gallery a img {
-        width: 90%;
-        box-shadow: 0 0 20px rgba(48, 48, 48, 0.7);
-    }
+main .gallery div a {
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    width: 75%;
+    height: 100px;
+    text-align: left; box-shadow:  0 0 20px rgba(48, 48, 48, 0.7);
+}
 
-    main .gallery a h3 {
-        position: absolute;
-        top: -55px;
-        left: 20px;
-        text-transform: uppercase;
-        font-size: 1em;
-    }
+main .gallery div a h3 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding:20px 0 0 50px;
+}
 
-    main .gallery a p {
-        position: absolute;
-        left: 20px;
-        top: -25px;
-        white-space: pre-line;
-        text-align: left;
-        font-size: .8em;
-    }
+main .gallery div a p {
+    white-space: pre-line;
+    padding: 5px 0 0 50px;
+    font-size: .8em;
+}
 
-    
-    
-    
+
+
+
     .foot {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background: #1b1b1b;
         width: 100%;
-        height: 60px;
+        height: 50px;
+        padding: 10px;
     }
 
     .foot p {
-        position: absolute;
-        top: 25px;
         font-size: .7em;
+        display: inline-block;
         color: #fff;
+    }
+
+    .foot div {
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        display: inline-block;
+    }
+
+    .foot div a {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
         padding: 0;
-    }
-
-    .foot p:nth-of-type(1) {
-        left: 60px;
-    }
-
-    .foot p:nth-of-type(2) {
-        right: 20px;
-    }
-
-    .foot a {
-        position:absolute;
-        top: 20px;
-        padding: 0;
-    }
-
-    .foot a:nth-of-type(1) {
-        left: 240px;
-    }
-    .foot a:nth-of-type(2) {
-        left: 210px;
     }
 
     .foot img {
-        width: 25px;
-        height: 25px;
+        width: 100%;
+        height: 100%;
 
     }
-
-
-
 
 
 
