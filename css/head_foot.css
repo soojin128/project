@@ -273,6 +273,10 @@ input:focus+button .fa {
   transform: translateY(-2px) rotate(-45deg);
   transition: 0.5s;
 }
+
+.popup{
+  display: none;
+}
 /*-------------- footer ---------------*/
 
 .foot {

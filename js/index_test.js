@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function () {
   var cont = document.querySelectorAll(".tab_body ul");
 
   categ.forEach(function (a, b) {
-    if (document.documentElement.offsetWidth >= 1440) {
+    if (document.documentElement.offsetWidth >= 1024) {
       a.addEventListener("mouseenter", hideFun);
     } else {
       a.addEventListener('click', function (e) {

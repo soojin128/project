@@ -1,0 +1,99 @@
+{
+  "gal1": [{
+      "thumb": "img/gall1-1.jpg",
+      "name": "A",
+      "subscript": "aaaaaaaa",
+      "type":"자연&동물"
+    },
+    {
+      "thumb": "img/gall1-2.jpg",
+      "name": "B",
+      "subscript": "bbbbbbbb",
+      "type":"자연&동물"
+    },
+    {
+      "thumb": "img/gall1-3.jpg",
+      "name": "C",
+      "subscript": "cccccccc",
+      "type":"자연&동물"
+    },
+    {
+      "thumb": "img/gall1-4.jpg",
+      "name": "D",
+      "subscript": "dddddddd",
+      "type":"자연&동물"
+    }],
+    "gal2":[{
+      "thumb": "img/gall2-1.jpg",
+      "name": "E",
+      "subscript": "eeeeeeee",
+      "type":"자연&동물"
+    },
+    {
+      "thumb": "img/gall2-2.jpg",
+      "name": "F",
+      "subscript": "ffffffff",
+      "type":"자연&동물"
+    },
+    {
+      "thumb": "img/gall2-3.jpg",
+      "name": "G",
+      "subscript": "gggggggg",
+      "type":"자연&동물"
+    },
+    {
+      "thumb": "img/gall2-4.jpg",
+      "name": "H",
+      "subscript": "hhhhhhhh",
+      "type":"도시&여행"
+    }],
+    "gal3":[{
+      "thumb": "img/gall3-1.jpg",
+      "name": "I",
+      "subscript": "iiiiiiii",
+      "type":"도시&여행"
+    },
+    {
+      "thumb": "img/gall3-2.jpg",
+      "name": "J",
+      "subscript": "jjjjjjjj",
+      "type":"도시&여행"
+    },
+    {
+      "thumb": "img/gall3-3.jpg",
+      "name": "K",
+      "subscript": "kkkkkkkk",
+      "type":"자연&동물"
+    },
+    {
+      "thumb": "img/gall3-4.jpg",
+      "name": "L",
+      "subscript": "llllllll",
+      "type":"도시&여행"
+    }],
+    "gal4":[{
+      "thumb": "img/gall4-1.jpg",
+      "name": "M",
+      "subscript": "mmmmmmmm",
+      "type":"인물"
+    },
+    {
+      "thumb": "img/gall4-2.jpg",
+      "name": "N",
+      "subscript": "nnnnnnnn",
+      "type":"인물"
+    },
+    {
+      "thumb": "img/gall4-3.jpg",
+      "name": "O",
+      "subscript": "oooooooo",
+      "type":"도시&여행"
+    },
+    {
+      "thumb": "img/gall4-4.jpg",
+      "name": "P",
+      "subscript": "pppppppp",
+      "type":"기타"
+    }
+  ]
+}
